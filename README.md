@@ -2,7 +2,7 @@
 
 ### Project purpose
 
-`open-icmp-server` is a tiny, focused daemon that listens for ICMP Echo Requests ("ping") and responds with proper ICMP Echo Replies. The code and packaging intentionally look professional (systemd unit, install script, clear README) to sell the joke as if this were a real network infrastructure component (DHCP/DNS-like).
+`open-icmp-server` is a tiny, focused daemon that listens for ICMP Echo Requests ("ping") and responds with proper ICMP Echo Replies.
 
 ### Features
 
