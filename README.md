@@ -27,6 +27,23 @@ chmod +x install.sh
 systemctl enable --now open-icmp-server.service
 ```
 
+### Installation (C version)
+
+```bash
+gcc -O2 -Wall -o open_icmp_server_c open_icmp_server.c
+sudo cp open_icmp_server_c /usr/local/bin/
+sudo cp open-icmp-server.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now open-icmp-server.service
+```
+
+### Debian package build
+
+```bash
+./build_deb.sh
+# resulting .deb will appear in parent directory
+```
+
 ### Usage
 
 * The daemon runs in the foreground under systemd and writes to journal. Use `journalctl -u open-icmp-server.service -f` to follow activity.
