@@ -1,0 +1,13 @@
+Source: open-icmp-server
+Section: net
+Priority: optional
+Maintainer: Your Name <you@example.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.1.4
+
+
+Package: open-icmp-server
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight ICMP echo responder daemon (prank)
+A minimal daemon that replies to ICMP Echo Requests.
