@@ -1,2 +1,2 @@
-open_icmp_server_c usr/local/bin/
-open-icmp-server.service lib/systemd/system/
+open_icmp_server_c usr/local/bin
+open-icmp-server.service lib/systemd/system
