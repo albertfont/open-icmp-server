@@ -2,13 +2,14 @@
 set -e
 
 
-# build C binary
+# compilar el binari C
 gcc -O2 -Wall -o open_icmp_server_c open_icmp_server.c
 
 
-# ensure debhelper is installed
-type dpkg-buildpackage >/dev/null 2>&1 || { echo "dpkg-dev/debhelper required"; exit 1; }
+# assegurar l'arbre necessari per dh_install
+mkdir -p debian/open-icmp-server/usr/local/bin
+cp open_icmp_server_c debian/open-icmp-server/usr/local/bin/
 
 
-# build package
+# construir el paquet
 dpkg-buildpackage -us -uc -b
