@@ -1,0 +1,5 @@
+open-icmp-server (0.1.0) unstable; urgency=low
+
+  * Initial release (Python + C ICMP responder).
+
+ -- Albert Font <albert@font.cat>  Fri, 26 Sep 2025 15:30:00 +0200
