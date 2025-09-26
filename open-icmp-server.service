@@ -1,0 +1,14 @@
+[Unit]
+Description=Open ICMP Server — Simple ICMP Echo responder
+After=network.target
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 /usr/local/bin/open_icmp_server.py
+Restart=on-failure
+# Keep the process in the foreground; systemd/journal will capture stdout/stderr
+
+
+[Install]
+WantedBy=multi-user.target
